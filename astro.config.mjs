@@ -11,4 +11,12 @@ export default defineConfig({
       applyBaseStyles: false,
     }),
   ],
+  i18n: {
+    defaultLocale: "es",
+    locales: ["es", "en", "pt-br"],
+    routing: {
+      prefixDefaultLocale: false,
+      redirectToDefaultLocale: true,
+    }
+  },
 });

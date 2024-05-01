@@ -1,5 +1,9 @@
 ---
 import { Button } from "../ui/button";
+import { getLangFromUrl, useTranslations } from "../../i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <footer
@@ -9,9 +13,9 @@ import { Button } from "../ui/button";
     class="flex-col md:flex-row w-full max-w-7xl mx-auto flex gap-4 items-center justify-between"
   >
     <div class="flex w-auto flex-col">
-      <span class="font-bold text-md">HTTP Cats and Dogs</span>
+      <span class="font-bold text-md">{t("footer.title")}</span>
       <p class="text-sm text-neutral-800 dark:text-neutral-100/60">
-        This is a clone of the original HTTP Cats website.
+        {t("footer.description")}
       </p>
     </div>
     <div

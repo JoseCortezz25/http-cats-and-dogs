@@ -2,9 +2,12 @@
 import Footer from "@/components/common/footer.astro";
 import Header from "@/components/common/header.astro";
 import "@/styles/globals.scss";
+
+const { currentLocale } = Astro;
+console.log({ currentLocale });
 ---
 
-<html lang="en">
+<html lang={currentLocale}>
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />

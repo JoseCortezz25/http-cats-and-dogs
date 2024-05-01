@@ -1,5 +1,10 @@
 ---
 import { ModeToggle } from "./mode-toggle";
+import { LanguageToggle } from "./language-toggle";
+import { getLangFromUrl, useTranslations } from "../../i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <header
@@ -10,10 +15,11 @@ import { ModeToggle } from "./mode-toggle";
   >
     <nav class="flex w-auto flex-col">
       <span class="text-md text-foreground font-medium mb-3">
-        HTTP Cats and Dogs
+        {t("nav.title")}
       </span>
     </nav>
-    <nav class="flex w-auto flex-col">
+    <nav class="flex w-auto gap-3">
+      <LanguageToggle client:load lang={lang} />
       <ModeToggle client:load />
     </nav>
   </div>
