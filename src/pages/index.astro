@@ -1,5 +1,6 @@
 ---
 import Banner from "@/components/common/banner.astro";
+import ListCards from "@/components/common/list-cards";
 import { Button } from "@/components/ui/button";
 import Layout from "@/layout/Layout.astro";
 ---
@@ -7,5 +8,6 @@ import Layout from "@/layout/Layout.astro";
 <Layout>
   <main>
     <Banner />
+    <ListCards client:visible />
   </main>
 </Layout>
