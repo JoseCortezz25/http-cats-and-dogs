@@ -1,115 +1,147 @@
-const status = [
+export const status = [
   {
     id: 1,
     status: 100,
     name: 'Continue',
     description: 'The server has received the request headers, and the client should proceed to send the request body',
-    image: ''
+    images: {
+      cat: '/images/cats/100.png',
+    }
   },
   {
     id: 2,
     status: 101,
     name: 'Switching Protocols',
     description: 'The requester has asked the server to switch protocols and the server has agreed to do so',
-    image: ''
+    images: {
+      cat: '/images/cats/101.png',
+    }
   },
   {
     id: 3,
     status: 102,
     name: 'Processing',
     description: 'A WebDAV request may contain many sub-requests involving file operations, requiring a long time to complete the request',
-    image: ''
+    images: {
+      cat: '/images/cats/102.png',
+    }
   },
   {
     id: 4,
     status: 103,
     name: 'Early Hints',
     description: 'This status code is primarily intended to be used with the Link header, letting the user agent start preloading resources while the server prepares a response',
-    image: ''
+    images: {
+      cat: '/images/cats/103.png',
+    }
   },
   {
     id: 5,
     status: 200,
     name: 'OK',
     description: 'The request has succeeded',
-    image: '',
+    images: {
+      cat: '/images/cats/200.png',
+    },
   },
   {
     id: 6,
     status: 201,
     name: 'Created',
     description: 'The request has been fulfilled, resulting in the creation of a new resource',
-    image: ''
+    images: {
+      cat: '/images/cats/201.png',
+    }
   },
   {
     id: 7,
     status: 202,
     name: 'Accepted',
     description: 'The request has been accepted for processing, but the processing has not been completed',
-    image: ''
+    images: {
+      cat: '/images/cats/202.png',
+    }
   },
   {
     id: 8,
     status: 203,
     name: 'Non-Authoritative Information',
     description: 'The server successfully processed the request, but is returning information that may be from another source',
-    image: ''
+    images: {
+      cat: '/images/cats/203.png',
+    }
   },
   {
     id: 9,
     status: 204,
     name: 'No Content',
     description: 'The server successfully processed the request, but is not returning any content',
-    image: ''
+    images: {
+      cat: '/images/cats/204.png',
+    }
   },
   {
     id: 10,
     status: 205,
     name: 'Reset Content',
     description: 'The server successfully processed the request, but is not returning any content',
-    image: ''
+    images: {
+      cat: '/images/cats/205.png',
+    }
   },
   {
     id: 11,
     status: 206,
     name: 'Partial Content',
     description: 'The server is delivering only part of the resource due to a range header sent by the client',
-    image: ''
+    images: {
+      cat: '/images/cats/206.png',
+    }
   },
   {
     id: 12,
     status: 207,
     name: 'Multi-Status',
     description: 'The message body that follows is by default an XML message and can contain a number of separate response codes, depending on how many sub-requests were made',
-    image: ''
+    images: {
+      cat: '/images/cats/207.png',
+    }
   },
   {
     id: 13,
     status: 208,
     name: 'Already Reported',
     description: 'The members of a DAV binding have already been enumerated in a previous reply to this request, and are not being included again',
-    image: ''
+    images: {
+      cat: '/images/cats/208.png',
+    }
   },
   {
     id: 14,
     status: 214,
     name: 'Transformation Applied',
     description: 'The server has fulfilled a request for the resource, and the response is a representation of the result of one',
-    image: ''
+    images: {
+      cat: '/images/cats/214.png',
+    }
   },
   {
     id: 14,
     status: 226,
     name: 'IM Used',
     description: 'The server has fulfilled a GET request for the resource, and the response is a representation of the result of one or more instance-manipulations applied to the current instance',
-    image: ''
+    images: {
+      cat: '/images/cats/226.png',
+    }
   },
   {
     id: 15,
     status: 300,
     name: 'Multiple Choices',
     description: 'The request has more than one possible response',
-    image: ''
+    images: {
+      cat: '/images/cats/300.png',
+    }
   },
   {
     id: 16,
