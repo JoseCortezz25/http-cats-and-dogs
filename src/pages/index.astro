@@ -1,13 +1,13 @@
 ---
 import Banner from "@/components/common/banner.astro";
 import ListCards from "@/components/common/list-cards";
-import { Button } from "@/components/ui/button";
 import Layout from "@/layout/Layout.astro";
+import { TabsCatsAndDogs } from "@/components/common/tabs-home";
 ---
 
 <Layout>
   <main>
     <Banner />
-    <ListCards client:visible />
+    <TabsCatsAndDogs client:visible />
   </main>
 </Layout>
