@@ -2,6 +2,7 @@
 import { ModeToggle } from "./mode-toggle";
 import { LanguageToggle } from "./language-toggle";
 import { getLangFromUrl, useTranslations } from "../../i18n/utils";
+import { CommandDemo } from "./command";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -19,6 +20,7 @@ const t = useTranslations(lang);
       </span>
     </nav>
     <nav class="flex w-auto gap-3">
+      <CommandDemo client:load />
       <LanguageToggle client:load lang={lang} />
       <ModeToggle client:load />
     </nav>
