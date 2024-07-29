@@ -13,11 +13,13 @@ const ListCards = ({ value }: ListCardsProps) => {
   const [filteredStatus, setFilteredStatus] = useState(status);
 
   const searchStatus = (value: string) => {
-    const filteredStatus = status
-      .slice(0, 13)
-      .filter((item) =>
-        item.name.toLocaleLowerCase().includes(value.toLocaleLowerCase())
+    const filteredStatus = status.filter((item) => {
+      const searchValue = value.toLocaleLowerCase();
+      return (
+        item.name.toLocaleLowerCase().startsWith(searchValue) ||
+        item.status.toString().startsWith(searchValue)
       );
+    });
     setFilteredStatus(filteredStatus);
   };
 
