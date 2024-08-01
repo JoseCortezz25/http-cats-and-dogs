@@ -1,10 +1,12 @@
 ---
 import Banner from "@/components/common/banner.astro";
+import { TabsCatsAndDogs } from "@/components/common/tabs-home";
 import Layout from "@/layout/Layout.astro";
 ---
 
 <Layout>
   <main>
     <Banner />
+    <TabsCatsAndDogs client:only />
   </main>
 </Layout>

@@ -31,7 +31,7 @@ const Card = ({
       </AspectRatio>
       <div className="flex justify-between py-[1rem]">
         <h3>{name}</h3>
-        <p>{status}</p>
+        <p className="font-bold text-lg">{status}</p>
       </div>
     </article>
   );
