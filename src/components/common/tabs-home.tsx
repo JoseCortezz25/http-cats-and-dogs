@@ -41,8 +41,7 @@ export function TabsCatsAndDogs() {
           onChange={({ target }) => searchStatus(target.value)}
         />
         <Search
-          size={22}
-          className="absolute right-[10px] text-gray-400/90 dark:text-gray-400/30 bottom-[10px]"
+          className="size-[18px] absolute right-[10px] text-gray-400/90 dark:text-gray-400/30 bottom-[11px]"
         />
       </div>
       <TabsList className="w-[35%] grid grid-cols-2 mx-auto mb-10">
