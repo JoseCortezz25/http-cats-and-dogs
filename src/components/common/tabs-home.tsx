@@ -29,11 +29,11 @@ export function TabsCatsAndDogs() {
   };
 
   return (
-    <Tabs defaultValue="Cats" className="max-w-[75rem]">
+    <Tabs defaultValue="Cats" className="max-w-[75rem]" id="list">
       <div>
-        <h3 className="text-center font-bold text-xl mb-3">Busca o filtra por perro o gato el estado HTTP.</h3>
+        <h3 className="text-center font-bold text-2xl md:text-xl mb-4 w-[80%] mx-auto md:w-full md:mb-3 text-balances">Busca o filtra por perro o gato el estado HTTP.</h3>
       </div>
-      <div className="w-[50%] flex relative mx-auto mb-6">
+      <div className="w-full px-4 md:px-0 md:w-[50%] flex relative mx-auto mb-9 md:mb-6">
         <Input
           type="text"
           placeholder="Search your http error"
@@ -41,13 +41,16 @@ export function TabsCatsAndDogs() {
           onChange={({ target }) => searchStatus(target.value)}
         />
         <Search
-          className="size-[18px] absolute right-[10px] text-gray-400/90 dark:text-gray-400/30 bottom-[11px]"
+          className="size-[18px] absolute right-[26px] md:right-[10px] text-gray-400/90 dark:text-gray-400/30 bottom-[11px]"
         />
       </div>
-      <TabsList className="w-[35%] grid grid-cols-2 mx-auto mb-10">
-        <TabsTrigger value="Cats">Cats</TabsTrigger>
-        <TabsTrigger value="Dogs">Dogs</TabsTrigger>
-      </TabsList>
+
+      <div className="px-4 md:px-0 ">
+        <TabsList className="w-[full] md:w-[50%] lg:w-[35%] grid grid-cols-2 mx-auto mb-10">
+          <TabsTrigger value="Cats">Cats</TabsTrigger>
+          <TabsTrigger value="Dogs">Dogs</TabsTrigger>
+        </TabsList>
+      </div>
 
       <TabsContent value="Cats">
         <ListCards value="cats" status={filteredStatus} />

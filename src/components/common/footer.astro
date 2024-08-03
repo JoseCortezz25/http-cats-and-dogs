@@ -13,14 +13,16 @@ const t = useTranslations(lang);
     class="flex-col md:flex-row w-full max-w-7xl mx-auto flex gap-4 items-center justify-between"
   >
     <div class="flex w-auto flex-col">
-      <span class="font-bold text-md">{t("footer.title")}</span>
-      <p class="text-sm text-neutral-800 dark:text-neutral-100/60">
+      <span class="text-center md:text-start font-bold text-md"
+        >{t("footer.title")}</span
+      >
+      <p
+        class="text-center md:text-start text-sm text-neutral-800 dark:text-neutral-100/60"
+      >
         {t("footer.description")}
       </p>
     </div>
-    <div
-      class="flex justify-end flex-col sm:flex-row items-center w-auto gap-4"
-    >
+    <div class="flex md:justify-end sm:flex-row items-center w-auto gap-4">
       <SocialMedia
         client:idle
         trigger="@alfonsochavarro"
