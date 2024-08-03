@@ -1,4 +1,6 @@
-export const status = [
+import type { Status } from "./types";
+
+export const enData: Status[] = [
   {
     id: 1,
     status: 100,
@@ -719,7 +721,6 @@ export const status = [
     name: "Site Frozen",
     description:
       "Error 530 indicates that the requests timeout or fail to connect to the origin web server",
-    image: "",
     images: {
       cat: "/images/cats/530.png",
       dog: "/images/dogs/530.png",
