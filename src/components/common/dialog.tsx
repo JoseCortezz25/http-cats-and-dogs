@@ -37,8 +37,8 @@ export function DialogCard({
       <DialogTrigger>{children}</DialogTrigger>
       <DialogContent className="sm:max-w-[425px]">
         <DialogHeader>
-          <DialogTitle className="flex items-center gap-2">
-            <span className="bg-blue-100 px-3 py-1 rounded-full text-md">{status}</span>
+          <DialogTitle className="flex items-center gap-2 py-3">
+            <span className="bg-blue-100 font-bold text-blue-600 dark:text-blue-800 px-3 py-1 rounded-full text-md dark:bg-blue-300">{status}</span>
             <h2 className="text-xl">{name}</h2>
           </DialogTitle>
         </DialogHeader>
