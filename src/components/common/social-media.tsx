@@ -15,7 +15,7 @@ const SocialMedia = ({ linkedinLink, githubLink, trigger }: SocialMediaProps) =>
   return (
     <div>
       <HoverCard>
-        <HoverCardTrigger>
+        <HoverCardTrigger className="cursor-pointer">
           <p className="font-semibold">{trigger}</p>
         </HoverCardTrigger>
         <HoverCardContent className="py-5 px-6 flex">
