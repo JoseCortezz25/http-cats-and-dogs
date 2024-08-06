@@ -48,7 +48,6 @@ export const esData: Status[] = [
     status: 200,
     name: "OK",
     description: "La solicitud ha tenido éxito",
-    // "The request has succeeded",
     images: {
       cat: "/images/cats/200.png",
       dog: "/images/dogs/200.jpeg",
@@ -59,7 +58,6 @@ export const esData: Status[] = [
     status: 201,
     name: "Created",
     description: "La solicitud se ha cumplido y ha resultado en la creación de un nuevo recurso",
-    // "The request has been fulfilled, resulting in the creation of a new resource",
     images: {
       cat: "/images/cats/201.png",
       dog: "/images/dogs/201.png",
@@ -70,7 +68,6 @@ export const esData: Status[] = [
     status: 202,
     name: "Accepted",
     description: "La solicitud ha sido aceptada para procesamiento, pero este no ha sido completado",
-    // "The request has been accepted for processing, but the processing has not been completed",
     images: {
       cat: "/images/cats/202.png",
       dog: "images/dogs/202.png",
@@ -81,7 +78,6 @@ export const esData: Status[] = [
     status: 203,
     name: "Non-Authoritative Information",
     description: "El servidor ha procesado con éxito la solicitud, pero está devolviendo información que puede ser de otra fuente",
-    // "The server successfully processed the request, but is returning information that may be from another source",
     images: {
       cat: "/images/cats/203.png",
       dog: "/images/dogs/203.png",
@@ -92,7 +88,6 @@ export const esData: Status[] = [
     status: 204,
     name: "No Content",
     description: "El servidor ha procesado con éxito la solicitud, pero no está devolviendo ningún contenido",
-    // "The server successfully processed the request, but is not returning any content",
     images: {
       cat: "/images/cats/204.png",
       dog: "/images/dogs/204.png",
@@ -103,7 +98,6 @@ export const esData: Status[] = [
     status: 205,
     name: "Reset Content",
     description: "El servidor ha procesado con éxito la solicitud, pero no está devolviendo ningún contenido",
-    // "The server successfully processed the request, but is not returning any content",
     images: {
       cat: "/images/cats/205.png",
       dog: "/images/dogs/205.png",
@@ -114,7 +108,7 @@ export const esData: Status[] = [
     status: 206,
     name: "Partial Content",
     description:
-      "The server is delivering only part of the resource due to a range header sent by the client",
+      "El servidor está entregando solo una parte del recurso debido a un encabezado de rango enviado por el cliente",
     images: {
       cat: "/images/cats/206.png",
       dog: "/images/dogs/206.png",
@@ -125,7 +119,7 @@ export const esData: Status[] = [
     status: 207,
     name: "Multi-Status",
     description:
-      "The message body that follows is by default an XML message and can contain a number of separate response codes, depending on how many sub-requests were made",
+      "El cuerpo del mensaje que sigue es por defecto un mensaje XML y puede contener una serie de códigos de respuesta separados, dependiendo de cuántas sub-solicitudes se hicieron",
     images: {
       cat: "/images/cats/207.png",
       dog: "/images/dogs/207.png",
@@ -136,7 +130,7 @@ export const esData: Status[] = [
     status: 208,
     name: "Already Reported",
     description:
-      "The members of a DAV binding have already been enumerated in a previous reply to this request, and are not being included again",
+      "Los miembros de un enlace DAV ya han sido enumerados en una respuesta previa a esta solicitud, y no se están incluyendo nuevamente",
     images: {
       cat: "/images/cats/208.png",
       dog: "/images/dogs/208.png",
@@ -147,7 +141,7 @@ export const esData: Status[] = [
     status: 214,
     name: "Transformation Applied",
     description:
-      "The server has fulfilled a request for the resource, and the response is a representation of the result of one",
+      "El servidor ha cumplido una solicitud para el recurso, y la respuesta es una representación del resultado de una",
     images: {
       cat: "/images/cats/214.png",
       dog: "/images/dogs/214.png",
@@ -158,7 +152,7 @@ export const esData: Status[] = [
     status: 226,
     name: "IM Used",
     description:
-      "The server has fulfilled a GET request for the resource, and the response is a representation of the result of one or more instance-manipulations applied to the current instance",
+      "El servidor ha cumplido una solicitud GET para el recurso, y la respuesta es una representación del resultado de una o más manipulaciones de instancia aplicadas a la instancia actual",
     images: {
       cat: "/images/cats/226.png",
       dog: "/images/dogs/226.png",
@@ -168,7 +162,7 @@ export const esData: Status[] = [
     id: 15,
     status: 300,
     name: "Multiple Choices",
-    description: "The request has more than one possible response",
+    description: "La solicitud tiene más de una posible respuesta",
     images: {
       cat: "/images/cats/300.png",
       dog: "/images/dogs/300.png",
@@ -179,7 +173,7 @@ export const esData: Status[] = [
     status: 301,
     name: "Moved Permanently",
     description:
-      "The URL of the requested resource has been changed permanently",
+      "La URL del recurso solicitado ha sido cambiada permanentemente",
     images: {
       cat: "/images/cats/301.png",
       dog: "/images/dogs/301.png",
@@ -190,7 +184,7 @@ export const esData: Status[] = [
     status: 302,
     name: "Found",
     description:
-      "The URL of the requested resource has been changed temporarily",
+      "La URL del recurso solicitado ha sido cambiada temporalmente",
     images: {
       cat: "/images/cats/302.png",
       dog: "/images/dogs/302.png",
@@ -201,7 +195,7 @@ export const esData: Status[] = [
     status: 303,
     name: "See Other",
     description:
-      "The server sent this response to direct the client to get the requested resource at another URI with a GET request",
+      "El servidor envió esta respuesta para dirigir al cliente a obtener el recurso solicitado en otra URI con una solicitud GET",
     images: {
       cat: "/images/cats/303.png",
       dog: "/images/dogs/303.png",
@@ -211,7 +205,7 @@ export const esData: Status[] = [
     id: 19,
     status: 304,
     name: "Not Modified",
-    description: "This is used for caching purposes",
+    description: "Esto se utiliza para propósitos de caché",
     images: {
       cat: "/images/cats/304.png",
       dog: "/images/dogs/304.png",
@@ -222,7 +216,7 @@ export const esData: Status[] = [
     status: 305,
     name: "Use Proxy",
     description:
-      "Was defined in a previous version of the HTTP specification to indicate that a requested response must be accessed by a proxy",
+      "Se definió en una versión anterior de la especificación HTTP para indicar que una respuesta solicitada debe ser accedida a través de un proxy",
     images: {
       cat: "/images/cats/305-deprecated.png",
       dog: "/images/dogs/305-deprecated.png",
@@ -233,7 +227,7 @@ export const esData: Status[] = [
     status: 307,
     name: "Temporary Redirect",
     description:
-      "The server sends this response to direct the client to get the requested resource at another URI with same method that was used in the prior request",
+      "El servidor envía esta respuesta para dirigir al cliente a obtener el recurso solicitado en otra URI con el mismo método que se utilizó en la solicitud anterior",
     images: {
       cat: "/images/cats/307.png",
       dog: "/images/dogs/307.png",
@@ -244,7 +238,7 @@ export const esData: Status[] = [
     status: 308,
     name: "Permanent Redirect",
     description:
-      "This means that the resource is now permanently located at another URI",
+      "Esto significa que el recurso ahora está ubicado permanentemente en otra URI",
     images: {
       cat: "/images/cats/308.png",
       dog: "/images/dogs/308.png",
@@ -255,7 +249,7 @@ export const esData: Status[] = [
     status: 400,
     name: "Bad Request",
     description:
-      "The server could not understand the request due to invalid syntax",
+      "El servidor no pudo entender la solicitud debido a una sintaxis inválida",
     images: {
       cat: "/images/cats/400.png",
       dog: "/images/dogs/400.png",
@@ -266,7 +260,7 @@ export const esData: Status[] = [
     status: 401,
     name: "Unauthorized",
     description:
-      'Although the HTTP standard specifies "unauthorized", semantically this response means "unauthenticated"',
+      'Aunque el estándar HTTP especifica "no autorizado", semánticamente esta respuesta significa "no autenticado"',
     images: {
       cat: "/images/cats/401.png",
       dog: "/images/dogs/401.png",
@@ -276,7 +270,7 @@ export const esData: Status[] = [
     id: 26,
     status: 402,
     name: "Payment Required",
-    description: "This response code is reserved for future use",
+    description: "Este código de respuesta está reservado para uso futuro",
     images: {
       cat: "/images/cats/402.png",
       dog: "/images/dogs/402.png",
@@ -287,7 +281,7 @@ export const esData: Status[] = [
     status: 403,
     name: "Forbidden",
     description:
-      "The client does not have access rights to the content, i.e. they are unauthorized",
+      "El cliente no tiene derechos de acceso al contenido, es decir, no está autorizado",
     images: {
       cat: "/images/cats/403.png",
       dog: "/images/dogs/403.png",
@@ -297,7 +291,7 @@ export const esData: Status[] = [
     id: 28,
     status: 404,
     name: "Not Found",
-    description: "The server can not find the requested resource",
+    description: "El servidor no puede encontrar el recurso solicitado",
     images: {
       cat: "/images/cats/404.png",
       dog: "/images/dogs/404.jpeg",
@@ -308,7 +302,7 @@ export const esData: Status[] = [
     status: 405,
     name: "Method Not Allowed",
     description:
-      "The request method is known by the server but has been disabled and cannot be used",
+      "El método de solicitud es conocido por el servidor pero ha sido deshabilitado y no puede ser utilizado",
     images: {
       cat: "/images/cats/405.png",
       dog: "/images/dogs/405.png",
@@ -319,7 +313,7 @@ export const esData: Status[] = [
     status: 406,
     name: "Not Acceptable",
     description:
-      "This response is sent when the web server, after performing server-driven content negotiation, doesn't find any content that conforms to the criteria given by the user agent",
+      "Esta respuesta se envía cuando el servidor web, después de realizar la negociación de contenido dirigida por el servidor, no encuentra ningún contenido que se ajuste a los criterios dados por el agente de usuario",
     images: {
       cat: "/images/cats/406.png",
       dog: "/images/dogs/406.png",
@@ -330,7 +324,7 @@ export const esData: Status[] = [
     status: 407,
     name: "Proxy Authentication Required",
     description:
-      "This is similar to 401 but authentication is needed to be done by a proxy",
+      "Esto es similar al 401, pero la autenticación debe ser realizada por un proxy",
     images: {
       cat: "/images/cats/407.png",
       dog: "/images/dogs/407.png",
@@ -341,7 +335,7 @@ export const esData: Status[] = [
     status: 408,
     name: "Request Timeout",
     description:
-      "This response is sent on an idle connection by some servers, even without any previous request by the client",
+      "Esta respuesta es enviada en una conexión inactiva por algunos servidores, incluso sin ninguna solicitud previa del cliente",
     images: {
       cat: "/images/cats/408.png",
       dog: "/images/dogs/408.png",
@@ -352,7 +346,7 @@ export const esData: Status[] = [
     status: 409,
     name: "Conflict",
     description:
-      "This response is sent when a request conflicts with the current state of the server",
+      "Esta respuesta se envía cuando una solicitud entra en conflicto con el estado actual del servidor",
     images: {
       cat: "/images/cats/409.png",
       dog: "/images/dogs/409.png",
@@ -363,7 +357,7 @@ export const esData: Status[] = [
     status: 410,
     name: "Gone",
     description:
-      "This response is sent when the requested content has been permanently deleted from server, with no forwarding address",
+      "Esta respuesta se envía cuando el contenido solicitado ha sido eliminado permanentemente del servidor, sin dirección de reenvío",
     images: {
       cat: "/images/cats/410.png",
       dog: "/images/dogs/410.png",
@@ -374,7 +368,7 @@ export const esData: Status[] = [
     status: 411,
     name: "Length Required",
     description:
-      "Server rejected the request because the Content-Length header field is not defined and the server requires it",
+      "El servidor rechazó la solicitud porque el campo de encabezado Content-Length no está definido y el servidor lo requiere",
     images: {
       cat: "/images/cats/411.png",
       dog: "/images/dogs/411.png",
@@ -385,7 +379,7 @@ export const esData: Status[] = [
     status: 412,
     name: "Precondition Failed",
     description:
-      "The client has indicated preconditions in its headers which the server does not meet",
+      "El cliente ha indicado precondiciones en sus encabezados que el servidor no cumple",
     images: {
       cat: "/images/cats/412.png",
       dog: "/images/dogs/412.png",
@@ -396,7 +390,7 @@ export const esData: Status[] = [
     status: 413,
     name: "Payload Too Large",
     description:
-      "Request entity is larger than limits defined by server; the server might close the connection or return an Retry-After header field",
+      "La entidad de solicitud es más grande que los límites definidos por el servidor; el servidor podría cerrar la conexión o devolver un campo de encabezado Retry-After",
     images: {
       cat: "/images/cats/413.png",
       dog: "/images/dogs/413.png",
@@ -407,7 +401,7 @@ export const esData: Status[] = [
     status: 414,
     name: "Request URI Too Long",
     description:
-      "The URI requested by the client is longer than the server is willing to interpret",
+      "El URI solicitado por el cliente es más largo de lo que el servidor está dispuesto a interpretar",
     images: {
       cat: "/images/cats/414.png",
       dog: "/images/dogs/414.png",
@@ -418,7 +412,7 @@ export const esData: Status[] = [
     status: 415,
     name: "Unsupported Media Type",
     description:
-      "The media format of the requested data is not supported by the server, so the server is rejecting the request",
+      "El formato de los datos solicitados no es compatible con el servidor, por lo que el servidor está rechazando la solicitud",
     images: {
       cat: "/images/cats/415.png",
       dog: "/images/dogs/415.png",
@@ -429,7 +423,7 @@ export const esData: Status[] = [
     status: 416,
     name: "Range Not Satisfiable",
     description:
-      "The range specified by the Range header field in the request can't be fulfilled; it's possible that the range is outside the size of the target URI's data",
+      "El rango especificado por el campo de encabezado Range en la solicitud no se puede satisfacer; es posible que el rango esté fuera del tamaño de los datos del URI objetivo",
     images: {
       cat: "/images/cats/416.png",
       dog: "/images/dogs/416.png",
@@ -440,7 +434,7 @@ export const esData: Status[] = [
     status: 417,
     name: "Expectation Failed",
     description:
-      "This response code means the expectation indicated by the Expect request header field can't be met by the server",
+      "Este código de respuesta significa que la expectativa indicada por el campo de encabezado Expect de la solicitud no puede ser cumplida por el servidor",
     images: {
       cat: "/images/cats/417.png",
       dog: "/images/dogs/417.png",
@@ -450,7 +444,7 @@ export const esData: Status[] = [
     id: 42,
     status: 418,
     name: "I'm a teapot",
-    description: "The server refuses the attempt to brew coffee with a teapot",
+    description: "El servidor rechaza el intento de preparar café con una tetera",
     images: {
       cat: "/images/cats/418.png",
       dog: "/images/dogs/418.png",
@@ -461,7 +455,7 @@ export const esData: Status[] = [
     status: 421,
     name: "Misdirected Request",
     description:
-      "The request was directed at a server that is not able to produce a response",
+      "La solicitud fue dirigida a un servidor que no es capaz de producir una respuesta",
     images: {
       cat: "/images/cats/421.png",
       dog: "/images/dogs/421.png",
@@ -472,7 +466,7 @@ export const esData: Status[] = [
     status: 422,
     name: "Unprocessable Entity",
     description:
-      "The request was well-formed but was unable to be followed due to semantic errors",
+      "La solicitud estaba bien formada pero no se pudo procesar debido a errores semánticos",
     images: {
       cat: "/images/cats/422.png",
       dog: "/images/dogs/422.png",
@@ -482,7 +476,7 @@ export const esData: Status[] = [
     id: 45,
     status: 423,
     name: "Locked",
-    description: "The resource that is being accessed is locked",
+    description: "El recurso al que se está accediendo está bloqueado",
     images: {
       cat: "/images/cats/423.png",
       dog: "/images/dogs/423.png",
@@ -492,7 +486,7 @@ export const esData: Status[] = [
     id: 46,
     status: 424,
     name: "Failed Dependency",
-    description: "The request failed due to failure of a previous request",
+    description: "La solicitud falló debido al fallo de una solicitud previa",
     images: {
       cat: "/images/cats/424.png",
       dog: "/images/dogs/424.png",
@@ -503,7 +497,7 @@ export const esData: Status[] = [
     status: 425,
     name: "Too Early",
     description:
-      "Indicates that the server is unwilling to risk processing a request that might be replayed",
+      "Indica que el servidor no está dispuesto a arriesgarse a procesar una solicitud que podría repetirse",
     images: {
       cat: "/images/cats/425.png",
       dog: "/images/dogs/425.png",
@@ -513,7 +507,7 @@ export const esData: Status[] = [
     id: 48,
     status: 426,
     name: "Upgrade Required",
-    description: "The client should switch to a different protocol",
+    description: "El cliente debe cambiar a un protocolo diferente",
     images: {
       cat: "/images/cats/426.png",
       dog: "/images/dogs/426.png",
@@ -523,7 +517,7 @@ export const esData: Status[] = [
     id: 49,
     status: 428,
     name: "Precondition Required",
-    description: "The origin server requires the request to be conditional",
+    description: "El servidor de origen requiere que la solicitud sea condicional",
     images: {
       cat: "/images/cats/428.png",
       dog: "/images/dogs/428.png",
@@ -534,7 +528,7 @@ export const esData: Status[] = [
     status: 429,
     name: "Too Many Requests",
     description:
-      "The user has sent too many requests in a given amount of time",
+      "El usuario ha enviado demasiadas solicitudes en un período de tiempo determinado",
     images: {
       cat: "/images/cats/429.png",
       dog: "/images/dogs/429.png",
@@ -545,7 +539,7 @@ export const esData: Status[] = [
     status: 431,
     name: "Request Header Fields Too Large",
     description:
-      "The server is unwilling to process the request because either an individual header field, or all the header fields collectively, are too large",
+      "El servidor no está dispuesto a procesar la solicitud porque uno o todos los campos de encabezado son demasiado grandes",
     images: {
       cat: "/images/cats/431.png",
       dog: "/images/dogs/431.png",
@@ -556,7 +550,7 @@ export const esData: Status[] = [
     status: 451,
     name: "Unavailable For Legal Reasons",
     description:
-      "The user requests an illegal resource, such as a web page censored by a government",
+      "El usuario solicita un recurso ilegal, como una página web censurada por un gobierno",
     images: {
       cat: "/images/cats/451.png",
       dog: "/images/dogs/451.png",
@@ -567,7 +561,7 @@ export const esData: Status[] = [
     status: 500,
     name: "Internal Server Error",
     description:
-      "The server has encountered a situation it doesn't know how to handle",
+      "El servidor ha encontrado una situación que no sabe cómo manejar",
     images: {
       cat: "/images/cats/500.png",
       dog: "/images/dogs/500.png",
@@ -578,7 +572,7 @@ export const esData: Status[] = [
     status: 501,
     name: "Not Implemented",
     description:
-      "The request method is not supported by the server and cannot be handled",
+      "El método de solicitud no está soportado por el servidor y no puede ser manejado",
     images: {
       cat: "/images/cats/501.png",
       dog: "/images/dogs/501.png",
@@ -589,7 +583,7 @@ export const esData: Status[] = [
     status: 502,
     name: "Bad Gateway",
     description:
-      "This error response means that the server, while working as a gateway to get a response needed to handle the request, got an invalid response",
+      "Esta respuesta de error significa que el servidor, mientras actuaba como puerta de enlace para obtener una respuesta necesaria para manejar la solicitud, recibió una respuesta inválida",
     images: {
       cat: "/images/cats/502.png",
       dog: "/images/dogs/502.png",
@@ -599,7 +593,7 @@ export const esData: Status[] = [
     id: 56,
     status: 503,
     name: "Service Unavailable",
-    description: "The server is not ready to handle the request",
+    description: "El servidor no está listo para manejar la solicitud",
     images: {
       cat: "/images/cats/503.png",
       dog: "/images/dogs/503.png",
@@ -610,7 +604,7 @@ export const esData: Status[] = [
     status: 504,
     name: "Gateway Timeout",
     description:
-      "This error response is given when the server is acting as a gateway and cannot get a response in time",
+      "Esta respuesta de error se da cuando el servidor está actuando como puerta de enlace y no puede obtener una respuesta a tiempo",
     images: {
       cat: "/images/cats/504.png",
       dog: "/images/dogs/504.png",
@@ -621,7 +615,7 @@ export const esData: Status[] = [
     status: 506,
     name: "Variant Also Negotiates",
     description:
-      "The server has an internal configuration error: transparent content negotiation for the request results in a circular reference",
+      "El servidor tiene un error de configuración interno: la negociación de contenido transparente para la solicitud resulta en una referencia circular",
     images: {
       cat: "/images/cats/506.png",
       dog: "/images/dogs/506.png",
@@ -632,7 +626,7 @@ export const esData: Status[] = [
     status: 507,
     name: "Insufficient Storage",
     description:
-      "The server is unable to store the representation needed to complete the request",
+      "El servidor no puede almacenar la representación necesaria para completar la solicitud",
     images: {
       cat: "/images/cats/507.png",
       dog: "/images/dogs/507.png",
@@ -643,7 +637,7 @@ export const esData: Status[] = [
     status: 508,
     name: "Loop Detected",
     description:
-      "The server detected an infinite loop while processing the request",
+      "El servidor detectó un bucle infinito mientras procesaba la solicitud",
     images: {
       cat: "/images/cats/508.png",
       dog: "/images/dogs/508.png",
@@ -654,7 +648,7 @@ export const esData: Status[] = [
     status: 510,
     name: "Not Extended",
     description:
-      "Further extensions to the request are required for the server to fulfill it",
+      "Se requieren más extensiones a la solicitud para que el servidor pueda cumplirla",
     images: {
       cat: "/images/cats/510.png",
       dog: "/images/dogs/510.png",
@@ -665,7 +659,7 @@ export const esData: Status[] = [
     status: 511,
     name: "Network Authentication Required",
     description:
-      "The 511 status code indicates that the client needs to authenticate to gain network access",
+      "El código de estado 511 indica que el cliente necesita autenticarse para obtener acceso a la red",
     images: {
       cat: "/images/cats/511.png",
       dog: "/images/dogs/511.png",
@@ -675,7 +669,7 @@ export const esData: Status[] = [
     id: 64,
     status: 521,
     name: "Web Server Is Down",
-    description: "The origin server has refused the connection from Cloudflare",
+    description: "El servidor de origen ha rechazado la conexión de Cloudflare",
     images: {
       cat: "/images/cats/521.png",
       dog: "/images/dogs/521.png",
@@ -686,7 +680,7 @@ export const esData: Status[] = [
     status: 522,
     name: "Connection Timed Out",
     description:
-      "Cloudflare could not negotiate a TCP handshake with the origin server",
+      "Cloudflare no pudo negociar un handshake TCP con el servidor de origen",
     images: {
       cat: "/images/cats/522.png",
       dog: "/images/dogs/522.png",
@@ -697,7 +691,7 @@ export const esData: Status[] = [
     status: 523,
     name: "Origin Is Unreachable",
     description:
-      "Cloudflare could not reach the origin server; for example, if the DNS records for the origin server are incorrect",
+      "Cloudflare no pudo alcanzar el servidor de origen; por ejemplo, si los registros DNS para el servidor de origen son incorrectos",
     images: {
       cat: "/images/cats/523.png",
       dog: "/images/dogs/523.png",
@@ -708,7 +702,7 @@ export const esData: Status[] = [
     status: 525,
     name: "SSL Handshake Failed",
     description:
-      "Cloudflare could not negotiate a SSL/TLS handshake with the origin server",
+      "Cloudflare no pudo negociar un handshake SSL/TLS con el servidor de origen",
     images: {
       cat: "/images/cats/525.png",
       dog: "/images/dogs/525.png",
@@ -719,7 +713,7 @@ export const esData: Status[] = [
     status: 530,
     name: "Site Frozen",
     description:
-      "Error 530 indicates that the requests timeout or fail to connect to the origin web server",
+      "El error 530 indica que las solicitudes se agotan o fallan al conectarse al servidor web de origen",
     images: {
       cat: "/images/cats/530.png",
       dog: "/images/dogs/530.png",
@@ -730,7 +724,7 @@ export const esData: Status[] = [
     status: 599,
     name: "Network Connect Timeout Error",
     description:
-      "This status code is not specified in any RFCs, but is used by some HTTP proxies to signal a network connect timeout behind the proxy to a client in front of the proxy",
+      "Este código de estado no está especificado en ningún RFC, pero es utilizado por algunos proxies HTTP para señalar un tiempo de espera de conexión de red detrás del proxy a un cliente frente al proxy",
     images: {
       cat: "/images/cats/599.png",
       dog: "/images/dogs/599.png",
