@@ -3,11 +3,15 @@ import Banner from "@/components/common/banner.astro";
 import ListCards from "@/components/common/list-cards";
 import Layout from "@/layout/Layout.astro";
 import { TabsCatsAndDogs } from "@/components/common/tabs-home";
+import ChatButton from "@/components/common/chat-button.astro";
+import Chat from "@/components/common/chat.tsx";
 ---
 
 <Layout>
   <main>
     <Banner />
     <TabsCatsAndDogs client:only />
+    <ChatButton client:visible />
+    <Chat client:visible />
   </main>
 </Layout>
